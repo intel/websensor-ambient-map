@@ -186,7 +186,7 @@
                         if (!this.$.mapElement.map)
                             return;
 
-                        var isNightMode = this.sensor.reading.illuminance < 10;
+                        var isNightMode = this.sensor.illuminance < 10;
                         if (typeof this.isNightMode == "undefined" || this.isNightMode != isNightMode) {
                             this.isNightMode = isNightMode;
 
