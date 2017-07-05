@@ -182,7 +182,7 @@
             ready: function() {
                 if ('AmbientLightSensor' in window) {
                     this.sensor = new AmbientLightSensor();
-                    this.sensor.onchange = function() {
+                    this.sensor.onreading = function() {
                         if (!this.$.mapElement.map)
                             return;
 
